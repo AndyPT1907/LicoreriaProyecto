@@ -1,0 +1,12 @@
+/* Cambia el color de los íconos de los controles del carrusel a negro */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: black;
+    border-radius: 50%; /* Opcional: para que los íconos sean círculos */
+}
+
+/* Asegúrate de que el botón sea visible sobre el fondo negro */
+.carousel-control-prev,
+.carousel-control-next {
+    filter: invert(100%); /* Opcional: invierte el color del ícono para que sea blanco en fondo negro */
+}

@@ -1,0 +1,45 @@
+/* Estilos para las flechas del carrusel */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%; /* Ajusta el ancho del botón de control */
+  color: white; /* Color del ícono de la flecha */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: black; /* Fondo negro para el ícono de las flechas */
+  border-radius: 50%; /* Opcional: hace el fondo circular */
+  width: 30px; /* Tamaño del ícono */
+  height: 30px; /* Tamaño del ícono */
+  background-size: 100%; /* Ajusta el tamaño del fondo */
+}
+
+/* Opcional: Ajustar la posición de las flechas */
+.carousel-control-prev {
+  left: 10px; /* Ajusta la posición horizontal de la flecha izquierda */
+}
+
+.carousel-control-next {
+  right: 10px; /* Ajusta la posición horizontal de la flecha derecha */
+}
+.carousel-item {
+  /* Asegúrate de que el contenedor esté bien configurado */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.card {
+  margin: 0 10px;
+}
+.card-img-top {
+  max-width: 100%;
+  height: auto; /* Mantener la proporción */
+}
+img {
+  width: 400px;
+  height: auto;
+}
+
+

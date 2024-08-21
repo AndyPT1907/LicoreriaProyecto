@@ -1,0 +1,36 @@
+
+<!-- Carousel -->
+<div id="local" class="carousel slide" data-bs-ride="carousel">
+  
+  
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner">
+      <div *ngFor="let item of picaditas; let i = index"
+           class="carousel-item"
+           [ngClass]="{'active': i === 0}">
+        <div class="d-flex justify-content-center">
+          <div class="card" style="width: 200px; margin: 0 10px;">
+            <img class="card-img-top" [src]="item.imageUrl" [alt]="item.name">
+
+            <div class="card-body">
+              <h4 class="card-title">Nombre: {{ item.name }}</h4>
+              <p class="card-text">Precio: {{ item.price }}</p>
+              
+              
+              <!-- <button (click)="addToCart(item)" class="btn btn-primary">Agregar al carrito</button>-->
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#local" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#local" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+  
