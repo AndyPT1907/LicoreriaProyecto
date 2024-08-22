@@ -8,5 +8,10 @@ import { Component } from '@angular/core';
   styleUrl: './nav-bar.component.css'
 })
 export class NavBarComponent {
-
+  cerrar(){
+    localStorage.removeItem('currentUser')
+    //localStorage.setItem("token",'false')
+    localStorage.removeItem('token')
+    window.location.href='login'
+  }
 }

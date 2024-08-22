@@ -1,1 +1,30 @@
-<p>products works!</p>
+<div class="my-4 text-center">
+    <h1>Bebidas alcoholicas</h1>
+    @for (item of productos; track item) {
+        <div class="card" style="width:400px">
+            <img class="card-img-top" src={{item.imageUrl}} alt="Card image">
+            <div class="card-body">
+              <h4 class="card-title">{{item.name}}</h4>
+              <p class="card-text">{{item.description}}</p>
+              <p class="card-text">$ {{item.price}}</p>
+              <a href="#" class="btn btn-primary">Agregar al carrito</a>
+            </div>
+          </div>
+    }
+</div>
+
+
+<div class="my-4 text-center">
+    <h1 >Snacks</h1>
+    @for (item of snacks1; track $index) {
+        <div class="card" style="width:400px">
+            <img class="card-img-top" src={{item.imageUrl}} alt="Card image">
+            <div class="card-body">
+              <h4 class="card-title">{{item.name}}</h4>
+              <p class="card-text">{{item.description}}</p>
+              <p class="card-text">$ {{item.price}}</p>
+              <a href="#" class="btn btn-primary">Agregar al carrito</a>
+            </div>
+          </div>
+    }
+</div>
